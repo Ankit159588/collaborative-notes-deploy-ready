@@ -71,7 +71,7 @@ export const getMe = async (accessToken) => {
 // NOTE API SECTION
 
 export const createNote = async (accessToken, noteData) => {
-  const response = await api.post("/note/", noteData, {
+  const response = await api.post("/note", noteData, {
     headers: {
       Authorization: `Bearer ${accessToken}`,
     },
@@ -105,7 +105,7 @@ export const deleteImage = async (accessToken, noteId, fileId) => {
 };
 
 export const getNotes = async (accessToken) => {
-  const response = await api.get("/note/", {
+  const response = await api.get("/note", {
     headers: {
       Authorization: `Bearer ${accessToken}`,
     },
