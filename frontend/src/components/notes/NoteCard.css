@@ -1,0 +1,51 @@
+.note-card__menu-wrapper {
+  position: relative;
+}
+
+.note-card__dropdown {
+  position: absolute;
+
+  top: 35px;
+  right: 0;
+
+  width: 140px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  padding: 6px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  z-index: 10;
+}
+
+.note-card__dropdown button {
+  width: 100%;
+
+  padding: 9px 10px;
+
+  border: none;
+  background: transparent;
+
+  border-radius: 6px;
+
+  text-align: left;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  color: #374151;
+
+  cursor: pointer;
+}
+
+.note-card__dropdown button:hover {
+  background: #f3f4f6;
+}
+
+.note-card__dropdown button:last-child {
+  color: #dc2626;
+}

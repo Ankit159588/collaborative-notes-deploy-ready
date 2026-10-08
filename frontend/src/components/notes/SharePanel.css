@@ -1,0 +1,105 @@
+.share-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.share-modal {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.share-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.share-modal__header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.share-modal__close {
+  border: none;
+  background: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.share-modal__description {
+  margin: 8px 0 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.share-modal__label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.share-modal__select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.share-modal__create {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.share-modal__create:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.share-modal__link-section {
+  margin-top: 20px;
+}
+
+.share-modal__link-row {
+  display: flex;
+  gap: 8px;
+}
+
+.share-modal__link-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.share-modal__link-row button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  cursor: pointer;
+}
+
+.share-modal__link-row button:hover {
+  background: #ddd;
+}

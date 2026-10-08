@@ -1,0 +1,183 @@
+.note-view {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.note-view__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.note-view__back {
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  font-size: 14px;
+  color: #6b7280;
+
+  cursor: pointer;
+}
+
+.note-view__back:hover {
+  color: #111827;
+}
+
+.note-view__menu {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  background: transparent;
+
+  border-radius: 8px;
+
+  font-size: 22px;
+  color: #6b7280;
+
+  cursor: pointer;
+}
+
+.note-view__menu:hover {
+  background: #f3f4f6;
+}
+
+.note-view__card {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 32px;
+}
+
+.note-view__title-section {
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.note-view__title-section h1 {
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.note-view__title-section p {
+  margin: 8px 0 0;
+
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.note-view__content {
+  padding: 28px 0;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: #374151;
+
+  white-space: pre-wrap;
+}
+
+.note-view__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  padding-top: 5px;
+}
+
+.note-view__images img {
+  max-width: 100%;
+  width: 300px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  object-fit: cover;
+}
+
+.note-view__loading {
+  max-width: 900px;
+  margin: 80px auto;
+
+  padding: 0 24px;
+
+  color: #6b7280;
+}
+
+.note-view__not-found {
+  max-width: 900px;
+  margin: 80px auto;
+
+  padding: 0 24px;
+
+  text-align: center;
+}
+
+.note-view__not-found h2 {
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  color: #111827;
+}
+
+.note-view__menu-wrapper {
+  position: relative;
+}
+
+.note-view__dropdown {
+  position: absolute;
+  top: 42px;
+  right: 0;
+
+  width: 150px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  padding: 6px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  z-index: 10;
+}
+
+.note-view__dropdown button {
+  width: 100%;
+
+  padding: 10px 12px;
+
+  border: none;
+  background: transparent;
+
+  border-radius: 6px;
+
+  text-align: left;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  color: #374151;
+
+  cursor: pointer;
+}
+
+.note-view__dropdown button:hover {
+  background: #f3f4f6;
+}
+
+.note-view__dropdown button:last-child {
+  color: #dc2626;
+}
